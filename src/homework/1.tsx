@@ -4,6 +4,12 @@ interface Props {
   children: ReactNode;
   onContentEndVisible: () => void;
 }
+interface IntersectionObserverInit {
+  rootMargin: string;
+  threshold: number;
+  root: Element | null;
+}
+
 // Опишіть Props
 export function Observer({ children, onContentEndVisible }: Props) {
   // Вкажіть правильний тип для useRef зверніть увагу, в який DOM елемент ми його передаємо
