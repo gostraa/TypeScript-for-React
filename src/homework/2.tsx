@@ -7,7 +7,7 @@ interface State {
 }
 
 type Action =
-  | { type: string }
+  | { type: "START_REQUEST" }
   | { type: "PENDING_REQUEST" }
   | { type: "FINISH_REQUEST" }
   | { type: "RESET_REQUEST" };
